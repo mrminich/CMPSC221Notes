@@ -1,14 +1,8 @@
 <h1>To Java from C++ - Part 2</h1>
-
 ---
-
-
 <h2>Methods in Java</h2>
 
-
 Creating and using methods in Java is very similar to using methods in C++, so I'll summarize some key issues here (and move on to some specifics unique to Java):
-
-
 
 *   The idea of writing a method once and being able to call it many times elsewhere is the same.
 *   The ideas of parameters, arguments, scope, and local variables are all the same.
