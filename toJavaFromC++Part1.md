@@ -69,22 +69,24 @@ public class ClassName
 
 There are two basic commands for outputting information: 
 
-
-
-
 *   <code>System.out.print<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>         
 
 prints the <em>argument</em> without a line break.  
  
-This would be similar to the C++ statement          <code>cout &lt;< <em>argument</em></code>; 
+This would be similar to the C++ statement          
 
-*   <code>System.out.println<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>     prints the argument with a line break. 
+<code>cout &lt;< <em>argument</em></code>; 
+
+*   <code>System.out.println<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>     
+
+prints the argument with a line break. 
  
-This would be similar to the C++ statement          <code>cout &lt;< <em>argument </em><&lt; endl;</code> 
+This would be similar to the C++ statement          
+
+<code>cout &lt;< <em>argument </em><&lt; endl;</code> 
 
 
-The arguments in the examples above are technically Strings. However, you can use the + concatenation operator + to concatenate (i.e. join) strings with numeric values as in: 
-
+The arguments in the examples above are technically Strings. However, you can use the + concatenation operator to concatenate (i.e. join) strings with numeric values as in: 
 
 
 ```
@@ -92,9 +94,6 @@ int hourPart = 9;
 int minPart = 45;
 System.out.println(hourPart +  ":" + minPart + " a.m.");
 ```
-
-
- 
 
 
 ### Command Line Input
@@ -107,22 +106,20 @@ We use the `Scanner` class for command line input. This has a few differences fr
 *   Streams are not used. Everything is a function.
 *   Input code is specific to the type of variable that you are reading from the input values.
 
-The import statement         `import java.util.Scanner;`
+The import statement         
+
+`import java.util.Scanner;`
 
 is required above the class when using a Scanner object.  
  
 Then in the main method, you declare and instantiate a Scanner object like this:
 
-<code>Scanner input = new Scanner(System.in);<strong> 
-</strong></code>
+`Scanner input = new Scanner(System.in);`
 
 To read from the input, make a call to one of the following methods for numeric data:
 
-
-
 *   `nextInt()`
-*   <code>nextDouble()<strong> 
-</strong></code>
+*   `nextDouble()`
 
 Here is an example that puts it all together: 
 
@@ -133,11 +130,8 @@ Scanner input = new Scanner(System.in);
 System.out.print("Enter the hour: ");
 hourPart = input.nextInt();
 System.out.print("Enter the minute: ");
+minPart = input.nextInt();` 
 ```
-
-
-`minPart = input.nextInt();` 
-
 
 To read in text, we have the following two methods:
 
@@ -149,11 +143,11 @@ To read in text, we have the following two methods:
  
 Note that there is **not** a `nextChar()` method. But here's a workaround:
 
-`char choice; 
+```
+char choice; 
 System.out.print("Option: "); 
-choice = input.next().charAt(0);` 
-
-
+choice = input.next().charAt(0);
+``` 
 Finally, you can use the `hasNext()` method of Scanner to test if there is more input, for inputting an unknown number of data points terminated with Ctrl+D on Unix-based systems or Ctrl+C on Windows-based systems. You can also use `hasNextDouble()` and analogous methods to test if the next input is of type `double`, and thus use a character sentinel to end input. For example, you could use: 
 
 
@@ -166,21 +160,16 @@ while (input.hasNext())
 ```
 
 
- 
-
-
 ### Formatted Output
 
 Java provides a more advanced output method called `printf()`. See [this page](http://alvinalexander.com/programming/printf-format-cheat-sheet) which is a decent reference  as well as this explanation:
-
-
 
 *   Write one string for the output with placeholders in it for numeric data. This is the first argument.
 *   List all outputs in order as the second and subsequent arguments.
 *   Some placeholder formats:
     *   `%d` for an `int` value.
     *   `%f` for an `double` or `float` value.
-    *   `%3d` for an `int` value printed to the right of a field of width 3. (Of course, the 3 can change. This is analogous to `cout &lt;< setw(3) &lt;< ...`.)
+    *   `%3d` for an `int` value printed to the right of a field of width 3. (Of course, the 3 can change. This is analogous to `cout << setw(3) << ...`.)
     *   `%.2f` for an `double` or `float` value with 2 decimal places. (Of course, the 2 can change.) 
 
 
