@@ -15,7 +15,7 @@ Many aspects of Java are _identical_ to C++ including:
 *   assignment statements and the assignment operator =
 *   declarations for `int`, `double`, and `char` variables (more below)
 *   arithmetic operators: `+, -, *, /, %`
-*   relational operators: `>, >=, &lt;, &lt;=, ==, !=`
+*   relational operators: `>, >=, <, >=, ==, !=`
 *   logical operators: `&&, ||, !`
 *   Boolean expressions
 *   `if `statements
@@ -58,7 +58,7 @@ public class ClassName
 {
    public static void main(String[] args)
    {
-      // logic goes here!
+      // code goes here!
    }
 }
 ```
@@ -72,7 +72,9 @@ There are two basic commands for outputting information:
 
 
 
-*   <code>System.out.print<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>         prints the <em>argument</em> without a line break.  
+*   <code>System.out.print<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>         
+
+prints the <em>argument</em> without a line break.  
  
 This would be similar to the C++ statement          <code>cout &lt;< <em>argument</em></code>; 
 
@@ -134,7 +136,7 @@ System.out.print("Enter the minute: ");
 ```
 
 
-`minPart = input.nextInt();` \
+`minPart = input.nextInt();` 
 
 
 To read in text, we have the following two methods:
@@ -532,7 +534,7 @@ in range -π/2 through π/2
 </table>
 
 
-There are other methods in the `Math` library. See [Oracle's official documentation](http://docs.oracle.com/javase/6/docs/api/java/lang/Math.html) to learn more.
+There are other methods in the `Math` library. See [http://docs.oracle.com/javase/10/docs/api/java/lang/Math.html](http://docs.oracle.com/javase/10/docs/api/java/lang/Math.html) to learn more.
 
 **Example:** Here's an example block of Java code that computes the base-2 logarithm of a number input by the user:
 
