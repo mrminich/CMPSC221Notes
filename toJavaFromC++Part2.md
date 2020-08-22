@@ -1,5 +1,4 @@
 <h1>To Java from C++ - Part 2</h1>
----
 <h2>Methods in Java</h2>
 
 Creating and using methods in Java is very similar to using methods in C++, so I'll summarize some key issues here (and move on to some specifics unique to Java):
@@ -10,21 +9,19 @@ Creating and using methods in Java is very similar to using methods in C++, so I
 *   Methods may be overloaded in Java as in C++; a method's uniqueness depends on its signature (return type, name, and types of parameters).
 *   In Java we add access specifiers (e.g. `public` or `private`) to individual methods before the return type.
 *   Passing arrays to methods is very similar in Java:
-    *   Like in C++, we pass arrays with empty brackets. The only difference is that in Java the brackets come before the name of the array in the function header, not after like in C++: \
- \
-`public void foo(int[] passedArray, int size) \
+    *   Like in C++, we pass arrays with empty brackets. The only difference is that in Java the brackets come before the name of the array in the function header, not after like in C++: 
+ 
+`public void foo(int[] passedArray, int size) 
 `
-    *   As in C++, only the name of the argument array is used in the function call \
- \
-`foo(myArray, 4); \
+    *   As in C++, only the name of the argument array is used in the function call 
+ 
+`foo(myArray, 4); 
 `
 *   Java dictates how parameters are passed based on their types:
     *   Primitive-type variables are **passed by value**. Thus, no changes made to primitive-type parameters in methods will persist. The way to get around this is to use a wrapper class, i.e. Integer. But, you won't likely need to worry about this issue too often as we get truly object-oriented.
     *   Reference-type variables (including arrays) are **passed by reference**. Thus, if you change an array that's a parameter to a method within the method, that change will persist. (By the way, that's the same behavior as in C++.) Objects are passed by reference by default.
 
 
-
----
 
 
 <h2>Static Methods</h2>
