@@ -44,10 +44,9 @@ Many aspects of Java are _identical_ to C++ including:
     
 `public static void main(String[] args)` 
 
-
-    *   This method must be marked **static**, meaning that it cannot be called on objects of the class.
-    *   The array `args` could be used to send in command-line arguments.
-    *   Any class could technically have a `main` method. For example, if you create a class named `Player `you might want to add a `main` method so that you can test this class without creating a more practical class called `Game `that would likely have a more meaningful `main` method. 
+*   This method must be marked **static**, meaning that it cannot be called on objects of the class.
+*   The array `args` could be used to send in command-line arguments.
+*   Any class could technically have a `main` method. For example, if you create a class named `Player `you might want to add a `main` method so that you can test this class without creating a more practical class called `Game `that would likely have a more meaningful `main` method. 
 
 
 This is the typical framework for a Java class (and therefore a typical Java source code file): 
