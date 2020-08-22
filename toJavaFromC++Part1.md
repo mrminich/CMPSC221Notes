@@ -12,8 +12,6 @@ It is assumed that you took the C++-based prerequisite courses CMPSC 121 & 122.
 
 Many aspects of Java are _identical_ to C++ including:
 
-
-
 *   assignment statements and the assignment operator =
 *   declarations for `int`, `double`, and `char` variables (more below)
 *   arithmetic operators: `+, -, *, /, %`
@@ -26,8 +24,6 @@ Many aspects of Java are _identical_ to C++ including:
 *   `while `loops
 *   `do`...`while` loops
 
-
-
 ---
 
 
@@ -39,22 +35,22 @@ Many aspects of Java are _identical_ to C++ including:
 
 
 
-*   Java is fully object-oriented, so everything must be written in the context of a class. \
+*   Java is fully object-oriented, so everything must be written in the context of a class. 
 
-*   The name of the class must be the same as the name of the source file (e.g. a class called `HelloWorld` must be saved in a file named  `HelloWorld.java \
+*   The name of the class must be the same as the name of the source file (e.g. a class called `HelloWorld` must be saved in a file named  `HelloWorld.java 
 `
 *   A Java executable program is a class that must have a method named `main` with the header
 
-     \
-`public static void main(String[] args)` \
+    
+`public static void main(String[] args)` 
 
 
     *   This method must be marked **static**, meaning that it cannot be called on objects of the class.
     *   The array `args` could be used to send in command-line arguments.
-    *   Any class could technically have a `main` method. For example, if you create a class named `Player `you might want to add a `main` method so that you can test this class without creating a more practical class called `Game `that would likely have a more meaningful `main` method. \
+    *   Any class could technically have a `main` method. For example, if you create a class named `Player `you might want to add a `main` method so that you can test this class without creating a more practical class called `Game `that would likely have a more meaningful `main` method. 
 
 
-This is the typical framework for a Java class (and therefore a typical Java source code file): \
+This is the typical framework for a Java class (and therefore a typical Java source code file): 
 
 
 
@@ -72,21 +68,21 @@ public class ClassName
 
 ### Command Line Output
 
-There are two basic commands for outputting information: \
+There are two basic commands for outputting information: 
 
 
 
 
-*   <code>System.out.print<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>         prints the <em>argument</em> without a line break.  \
- \
-This would be similar to the C++ statement          <code>cout &lt;< <em>argument</em></code>; \
+*   <code>System.out.print<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>         prints the <em>argument</em> without a line break.  
+ 
+This would be similar to the C++ statement          <code>cout &lt;< <em>argument</em></code>; 
 
-*   <code>System.out.println<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>     prints the argument with a line break. \
- \
-This would be similar to the C++ statement          <code>cout &lt;< <em>argument </em><&lt; endl;</code> \
+*   <code>System.out.println<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>     prints the argument with a line break. 
+ 
+This would be similar to the C++ statement          <code>cout &lt;< <em>argument </em><&lt; endl;</code> 
 
 
-The arguments in the examples above are technically Strings. However, you can use the + concatenation operator + to concatenate (i.e. join) strings with numeric values as in: \
+The arguments in the examples above are technically Strings. However, you can use the + concatenation operator + to concatenate (i.e. join) strings with numeric values as in: 
 
 
 
@@ -102,7 +98,7 @@ System.out.println(hourPart +  ":" + minPart + " a.m.");
 
 ### Command Line Input
 
-We use the `Scanner` class for command line input. This has a few differences from C++: \
+We use the `Scanner` class for command line input. This has a few differences from C++: 
 
 
 
@@ -112,11 +108,11 @@ We use the `Scanner` class for command line input. This has a few differences fr
 
 The import statement         `import java.util.Scanner;`
 
-is required above the class when using a Scanner object.  \
- \
+is required above the class when using a Scanner object.  
+ 
 Then in the main method, you declare and instantiate a Scanner object like this:
 
-<code>Scanner input = new Scanner(System.in);<strong> \
+<code>Scanner input = new Scanner(System.in);<strong> 
 </strong></code>
 
 To read from the input, make a call to one of the following methods for numeric data:
@@ -124,10 +120,10 @@ To read from the input, make a call to one of the following methods for numeric 
 
 
 *   `nextInt()`
-*   <code>nextDouble()<strong> \
+*   <code>nextDouble()<strong> 
 </strong></code>
 
-Here is an example that puts it all together: \
+Here is an example that puts it all together: 
 
 
 
@@ -149,15 +145,15 @@ To read in text, we have the following two methods:
 *   `next()`                      which reads text up to whitespace
 *   `nextLine()      `which reads text up to a line break (like `getline `in C++)
 
- \
+ 
 Note that there is **not** a `nextChar()` method. But here's a workaround:
 
-`char choice; \
-System.out.print("Option: "); \
-choice = input.next().charAt(0);` \
+`char choice; 
+System.out.print("Option: "); 
+choice = input.next().charAt(0);` 
 
 
-Finally, you can use the `hasNext()` method of Scanner to test if there is more input, for inputting an unknown number of data points terminated with Ctrl+D on Unix-based systems or Ctrl+C on Windows-based systems. You can also use `hasNextDouble()` and analogous methods to test if the next input is of type `double`, and thus use a character sentinel to end input. For example, you could use: \
+Finally, you can use the `hasNext()` method of Scanner to test if there is more input, for inputting an unknown number of data points terminated with Ctrl+D on Unix-based systems or Ctrl+C on Windows-based systems. You can also use `hasNextDouble()` and analogous methods to test if the next input is of type `double`, and thus use a character sentinel to end input. For example, you could use: 
 
 
 
@@ -184,27 +180,27 @@ Java provides a more advanced output method called `printf()`. See [this page](h
     *   `%d` for an `int` value.
     *   `%f` for an `double` or `float` value.
     *   `%3d` for an `int` value printed to the right of a field of width 3. (Of course, the 3 can change. This is analogous to `cout &lt;< setw(3) &lt;< ...`.)
-    *   `%.2f` for an `double` or `float` value with 2 decimal places. (Of course, the 2 can change.) \
+    *   `%.2f` for an `double` or `float` value with 2 decimal places. (Of course, the 2 can change.) 
 
 
 **Example 1: **The following code prints out the time exactly as in an earlier example:
 
-`System.out.printf("Time: %d:%d\n", hourPart, minPart);` \
+`System.out.printf("Time: %d:%d\n", hourPart, minPart);` 
 
 
-**Example 2: **Here's an example block of code that computes and prints sales tax: \
+**Example 2: **Here's an example block of code that computes and prints sales tax: 
 
 
-`final double TAX_PCT = 0.06;    // sales tax rate \
-double price = 0.0;             // price of an item in $ \
-double finalPrice = 0.0;        // price of item w/ tax, $ \
- \
-System.out.print("Enter price: $"); \
-price = input.nextDouble(); \
- \
-final_price = price * (1 + TAX_PCT); \
- \
-System.out.printf("Price with tax is $%.2f.\n", final_price);` \
+`final double TAX_PCT = 0.06;    // sales tax rate 
+double price = 0.0;             // price of an item in $ 
+double finalPrice = 0.0;        // price of item w/ tax, $ 
+ 
+System.out.print("Enter price: $"); 
+price = input.nextDouble(); 
+ 
+final_price = price * (1 + TAX_PCT); 
+ 
+System.out.printf("Price with tax is $%.2f.\n", final_price);` 
 
 
 
@@ -273,7 +269,7 @@ In addition, these classes provide some helpful methods, as we saw the other day
 
 Wrapper classes include `Integer`, `Double`, `Character`, and `Boolean`.
 
-Here's a simple example that shows how to wrap an `int` in an `Integer` and unwrap it: \
+Here's a simple example that shows how to wrap an `int` in an `Integer` and unwrap it: 
 
 
 
@@ -298,7 +294,7 @@ System.out.printf("Hour: %d\n", hourPartWrapped.intValue());
 
 ## Data Types in Java: Arrays
 
-Arrays are also reference types. As a result, we need to specify that we're dealing with an array in two places: \
+Arrays are also reference types. As a result, we need to specify that we're dealing with an array in two places: 
 
 
 
@@ -306,11 +302,11 @@ Arrays are also reference types. As a result, we need to specify that we're deal
 *   In declaring the array, when we give the type before the name, we must include **_empty_** brackets after any other type to indicate that we're dealing with an array.
 *   We then use the `new` keyword similarly to declaring a scalar reference type variable, but give brackets with the physical size of the array inside afterward.
 
-Here's a general form of declaring and initializing an array separately: \
+Here's a general form of declaring and initializing an array separately: 
 
 
-<code><em>type</em>[] arrayName; \
-arrayName = new <em>type</em>[size];</code> \
+<code><em>type</em>[] arrayName; 
+arrayName = new <em>type</em>[size];</code> 
 
 
 Here's an example:
