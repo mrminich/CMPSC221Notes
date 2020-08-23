@@ -1,2 +1,1 @@
-# CMPSC221Notes
-CMPSC 221 at Penn State University with Prof. Minich
+# CMPSC 221 Notes at Penn State University - Berks with Prof. Minich
