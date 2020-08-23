@@ -1,12 +1,12 @@
-**Java Coding Standards**
-for use in Mr. Minich's Java courses
+## Java Coding Standards 
+*for use in Mr. Minich's Java courses*
 
-While the coding style guidelines below will be enforced on graded programming assignments in this course, others sets of popular and worthwhile style standards may be found at authoritative sources such as Oracle & Google.
+While the coding style guidelines below will be enforced on graded programming assignments in this course there other sets of popular style standards used by developers, companies, and institutions.
 
-This coding style guide is a simplified version of one that has been used with good success both in industrial practice and for academic high school and college courses. A style guide is a set of mandatory requirements for layout and formatting. Uniform style makes it easier for you to read code from your instructor, classmates, collaborators, and coworkers. It is also easier for others to grasp the essence of your programs quickly. If you already have programming experience in Java or another language, you may be initially uncomfortable at giving up some fond habits. However, it is a sign of professionalism to set aside personal preferences in minor matters and to compromise for the benefit of your group.
-These guidelines are necessarily somewhat dull. They also mention features that you may not yet have seen in class. Here are the most important highlights:
+Consistent style makes it easier for you to read code from classmates and collaborators so they can quickly understand your code. It is respectful to give up personal preferences and work with others for the overall good of an organization.
 
-*   Tabs are set every two spaces even if some of the instructor's demo programs have different tab sizes. But use spaces instead of tabs if your IDE (editor) software allows it such as repl.it. 
+*   Tabs are set every 2 spaces even if some of the instructor's programs have different tab sizes. 
+* Use spaces instead of tabs if your IDE (editor) software allows it such as repl.it. 
 *   Variable and method names begin with a lowercase letter but additional words are capitalized (e.g. `numStudents` rather than `NumStudents`, `num_students`, or `numstudents`.) This notation is often called **camelCase**. 
 *   Class names start with an uppercase letter (e.g. `BankAccount` rather than `bankAccount`.) 
 *   Constant names are UPPERCASE, with an occasional underscore to separate words (e.g. `BANK_FEE` rather than `BANKFEE` or `bankFee`.) 
