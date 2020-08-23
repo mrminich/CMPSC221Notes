@@ -1,7 +1,8 @@
 **Java Coding Standards**
-originally adapted from Appendix A1 of _Big Java_ by Cay Horstmann
+for use in Mr. Minich's Java courses
 
 While the coding style guidelines below will be enforced on graded programming assignments in this course, others sets of popular and worthwhile style standards may be found at authoritative sources such as Oracle & Google.
+
 This coding style guide is a simplified version of one that has been used with good success both in industrial practice and for academic high school and college courses. A style guide is a set of mandatory requirements for layout and formatting. Uniform style makes it easier for you to read code from your instructor, classmates, collaborators, and coworkers. It is also easier for others to grasp the essence of your programs quickly. If you already have programming experience in Java or another language, you may be initially uncomfortable at giving up some fond habits. However, it is a sign of professionalism to set aside personal preferences in minor matters and to compromise for the benefit of your group.
 These guidelines are necessarily somewhat dull. They also mention features that you may not yet have seen in class. Here are the most important highlights:
 
