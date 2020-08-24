@@ -1,12 +1,6 @@
-**To Java from C++ - Part 1**
+# Transition to Java from C++, Part 1 #
 
-It is assumed that you took the C++-based prerequisite courses CMPSC 121 & 122.
-
-
-
----
-
-
+It is possible, though not certain, that you took the C++-based prerequisite courses, CMPSC 121 & 122, at Penn State before this CMPSC 221 Java-based course.
 
 ## Similarities to C++
 
@@ -26,60 +20,52 @@ Many aspects of Java are _identical_ to C++ including:
 
 ---
 
-
-
 ## Differences with C++
-
 
 ### Program Framework and Classes
 
-
-
 *   Java is fully object-oriented, so everything must be written in the context of a class. 
 
-*   The name of the class must be the same as the name of the source file (e.g. a class called `HelloWorld` must be saved in a file named  `HelloWorld.java 
-`
+*   The name of the class must be the same as the name of the source file (e.g. a class called `HelloWorld` must be saved in a file named  `HelloWorld.java` 
+
 *   A Java executable program is a class that must have a method named `main` with the header
 
     
 `public static void main(String[] args)` 
 
-*   This method must be marked **static**, meaning that it cannot be called on objects of the class.
+*   This method must be marked `static`, meaning that it cannot be called on objects of the class.
 *   The array `args` could be used to send in command-line arguments.
-*   Any class could technically have a `main` method. For example, if you create a class named `Player `you might want to add a `main` method so that you can test this class without creating a more practical class called `Game `that would likely have a more meaningful `main` method. 
-
+*   Any class could technically have a `main` method. For example, if you create a class named `Player` you might want to add a `main` method so that you can test this class without creating a more practical class called `Gamethat would likely have a more meaningful `main` method. 
 
 This is the typical framework for a Java class (and therefore a typical Java source code file): 
-
-
 
 ```
 public class ClassName
 {
+
    public static void main(String[] args)
    {
       // code goes here!
    }
+   
 }
 ```
-
-
 
 ### Command Line Output
 
 There are two basic commands for outputting information: 
 
-*   <code>System.out.print<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>         
+*   `System.out.print(argument);`         
 
-prints the <em>argument</em> without a line break.  
+prints the `argument` without a line break.  
  
 This would be similar to the C++ statement          
 
-<code>cout &lt;< <em>argument</em></code>; 
+`cout << argument;` 
 
-*   <code>System.out.println<strong>(</strong></code> <em>argument</em> <strong><code>);</code></strong>     
+* `System.out.println(argument);</code>`
 
-prints the argument with a line break. 
+prints the argument _with_ a line break. 
  
 This would be similar to the C++ statement          
 
